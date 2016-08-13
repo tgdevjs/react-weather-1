@@ -1,5 +1,4 @@
-### react-boilerplate-1
-React boilerplate with webpack and server for serving on heroku.  
+### react-weather-1
+react weather app with navbar.  
 
 On heroku:  
-https://agile-sands-49441.herokuapp.com/
