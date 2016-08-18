@@ -24,8 +24,11 @@ module.exports = {
       Main: 'src/components/Main.jsx',
       Nav: 'src/components/Nav.jsx',
       Weather: 'src/components/Weather.jsx',
+      WeatherForm: 'src/components/WeatherForm.jsx',
+      WeatherMessage: 'src/components/WeatherMessage',
       About: 'src/components/About.jsx',
-      Examples: 'src/components/Examples.jsx'
+      Examples: 'src/components/Examples.jsx',
+      openWeatherMap: 'src/api/openWeatherMap.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
@@ -45,7 +48,8 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-        OTHER_VALUE: JSON.stringify(process.env.OTHER_VALUE)
+        OTHER_VALUE: JSON.stringify(process.env.OTHER_VALUE),
+        WEATHER_APP_ID: JSON.stringify(process.env.WEATHER_APP_ID)
       }
     })
   ],

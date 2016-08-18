@@ -4,6 +4,15 @@ var express = require('express');
 var app = express();
 const port = process.env.PORT || 3000;
 
+// Redirect https to http
+app.use(function (req, res, next){
+    if (req.headers['x-forwarded-proto'] === 'https') {
+      req.redirect('http://' + req.hostname + req.url);
+    } else {
+      next();
+    }
+});
+
 // Designate folder to serve
 app.use(express.static('public'));
 
