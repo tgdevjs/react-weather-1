@@ -22,9 +22,7 @@
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-router": "^2.6.1",
-    "webpack": "^1.13.1"
-  },
-  "devDependencies": {
+    "webpack": "^1.13.1",
     "css-loader": "^0.23.1",
     "foundation-sites": "^6.2.0",
     "jquery": "^2.2.1",
