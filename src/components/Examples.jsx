@@ -5,11 +5,11 @@ var Examples = React.createClass({
   render: function() {
     return (
       <div>
-        <h1 className="text-center">Examples Component</h1>
+        <h1 className="text-center">Examples</h1>
         <p>Here are a few example locations to try out:</p>
         <ol>
           <li>
-            <Link to="/?location=Philadelphia">Philadelphia, PA</Link>
+            <Link to="/?location=Honolulu">Honolulu, HI</Link>
           </li>
           <li>
             <Link to="/?location=Rio">Rio, Brazil</Link>
